@@ -1,0 +1,45 @@
+@import url("https://fonts.googleapis.com/css?family=Alegreya+Sans:300,400&display=swap");
+
+*,
+*::after,
+*::before {
+  margin: 0;
+  padding: 0;
+  line-height: 1.7;
+  box-sizing: border-box;
+}
+
+$base-font-size: 62.5%; // 10px
+
+html {
+  font-size: $base-font-size;
+}
+body {
+  font-family: "Alegreya Sans", sans-serif;
+  padding: 1rem;
+}
+
+@import "abstracts/color";
+@import "abstracts/mixins";
+@import "abstracts/screen-size";
+
+@import "utilites/utilites";
+
+@import "layouts/layout";
+@import "layouts/grid";
+@import "layouts/navigation";
+
+@import "typography/typography";
+@import "header/header";
+
+@import "components/button/button";
+@import "components/card/card";
+@import "components/form/form";
+@import "components/alert/alert";
+
+@import "components/composition";
+@import "components/logo";
+@import "components/loader";
+
+@import "animations/buttonanimation";
+@import "pages/home";

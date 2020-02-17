@@ -1,0 +1,37 @@
+{
+  "name": "sajankumarv",
+  "version": "1.0.0",
+  "main": "index.js",
+  "license": "MIT",
+  "scripts": {
+    "clean": "rimraf build",
+    "prestart": "npm run clean",
+    "build:styles-dev": "node-sass --include-path scss -w app/styles/index.scss  app/public/css/main.css",
+    "start": "NODE_ENV=development webpack --config webpack.config.js --watch --progress --env development",
+    "dev": "npm-run-all --parallel start build:styles-dev",
+    "build:app-prod": "NODE_ENV=production webpack --config webpack.config.js --progress --env production",
+    "build:styles-prod": "node-sass --include-path scss app/styles/index.scss  app/public/css/main.css --output-style compressed",
+    "prod": "npm-run-all --parallel build:app-prod build:styles-prod"
+  },
+  "dependencies": {
+    "body-parser": "^1.19.0",
+    "cookie-parser": "^1.4.4",
+    "express": "^4.17.1",
+    "express-rate-limit": "^5.0.0",
+    "node-sass": "^4.13.1"
+  },
+  "devDependencies": {
+    "@babel/cli": "^7.8.3",
+    "@babel/core": "^7.8.3",
+    "@babel/preset-env": "^7.8.3",
+    "babel-loader": "^8.0.6",
+    "copy-webpack-plugin": "^5.1.1",
+    "minify": "^5.1.0",
+    "nodemon": "^2.0.2",
+    "npm-run-all": "^4.1.5",
+    "terser-webpack-plugin": "^2.3.4",
+    "webpack": "^4.41.5",
+    "webpack-cli": "^3.3.10",
+    "webpack-shell-plugin": "^0.5.0"
+  }
+}

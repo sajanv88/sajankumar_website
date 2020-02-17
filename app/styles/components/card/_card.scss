@@ -1,0 +1,44 @@
+.card {
+  background-color: $color-secondary-2;
+  padding: 2.5rem;
+  text-align: center;
+  border-radius: 3px;
+  box-shadow: 0 1.5rem 4rem rgba($color-black, 0.4rem);
+  margin-top: 5rem;
+  transition: all 0.2s;
+  &__icon {
+    font-size: 5rem;
+    color: $color-secondary;
+  }
+
+  &__info {
+    ul {
+      list-style: none;
+    }
+  }
+
+  &__list {
+    display: flex;
+    & > div:not(:first-child) {
+      padding-left: 1.4rem;
+      padding-top: 1rem;
+    }
+    & > div {
+      font-size: 1.6rem;
+      text-align: left;
+      span {
+        color: $color-white;
+      }
+      i {
+        font-size: 3rem;
+      }
+      h6 {
+        text-align: left;
+      }
+    }
+  }
+
+  &:hover {
+    transform: scale(1.06);
+  }
+}

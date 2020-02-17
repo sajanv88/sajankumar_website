@@ -1,0 +1,38 @@
+.heading-primary {
+  &__title {
+    animation-name: moveLeft;
+    animation-duration: 1s;
+    animation-timing-function: ease-out;
+  }
+  &__sub-title {
+    animation-name: moveRight;
+    animation-duration: 1s;
+    animation-timing-function: ease-out;
+  }
+}
+@keyframes moveLeft {
+  0% {
+    opacity: 0;
+    transform: translateX(-200px);
+  }
+  80% {
+    transform: translateX(20px);
+  }
+  100% {
+    opacity: 1;
+    transform: translateX(0);
+  }
+}
+@keyframes moveRight {
+  0% {
+    opacity: 0;
+    transform: translateX(200px);
+  }
+  80% {
+    transform: translateX(-20px);
+  }
+  100% {
+    opacity: 1;
+    transform: translateX(0);
+  }
+}

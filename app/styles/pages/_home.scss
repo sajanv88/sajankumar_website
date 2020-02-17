@@ -1,0 +1,71 @@
+.section-about {
+  background-color: $color-default-bg;
+  background-repeat: no-repeat;
+  padding: 2.5rem 3rem;
+  @media screen and (min-width: $medium-screen) {
+    padding: 6.5rem 0;
+  }
+}
+
+.section-skills {
+  background-color: $color-default-bg;
+  padding: 5.5rem 3rem;
+
+  background-image: linear-gradient(
+      to left,
+      $color-primary-bg-dark 50%,
+      $color-primary-bg-dark 50%
+    ),
+    url(/assets/images/service_bg.jpg);
+  background-repeat: no-repeat;
+  background-size: cover;
+  transform: skewY(-7deg);
+  margin-top: -9rem;
+  @media screen and (min-width: $medium-screen) {
+    padding: 6.5rem 0;
+  }
+
+  & > * {
+    transform: skewY(7deg);
+  }
+}
+
+.section-contact {
+  background-color: $color-default-bg;
+  padding: 13.5rem 2rem 2rem;
+  margin-top: -9rem;
+
+  @media screen and (min-width: $medium-screen) {
+    padding: 15rem 0 3rem;
+  }
+}
+
+.footer {
+  background-image: linear-gradient(
+      to left,
+      $color-primary-bg-dark 50%,
+      $color-primary-bg-dark 50%
+    ),
+    url(/assets/images/footer_bg.jpg);
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position-y: center;
+  padding: 2.5rem 0;
+
+  &__copyright {
+    display: flex;
+    flex-direction: column;
+    & > p {
+      font-size: 2rem;
+      color: $color-white;
+    }
+  }
+  &__social {
+    display: flex;
+    flex-direction: column;
+    & > div {
+      align-self: center;
+      margin-top: 1rem;
+    }
+  }
+}

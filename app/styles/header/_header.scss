@@ -1,0 +1,38 @@
+.header-container {
+  background: $color-default-bg;
+  &__header {
+    background-image: linear-gradient(
+        to left,
+        $color-primary-bg-dark 50%,
+        $color-primary-bg-dark 50%
+      ),
+      url(/assets/images/bg.jpg);
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+    height: 90vh;
+    clip-path: polygon(0 0, 100% 0%, 100% 75vh, 0 100%);
+  }
+  &__text-area {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    height: inherit;
+  }
+
+  .heading-primary {
+    text-align: center;
+    &__title,
+    &__sub-title {
+      display: block;
+    }
+  }
+
+  .heading-action {
+    align-self: center;
+    margin-top: 2rem;
+    @media screen and (min-width: $medium-screen) {
+      margin-top: 3rem;
+    }
+  }
+}

@@ -1,0 +1,73 @@
+@mixin grid {
+  display: grid;
+  grid-gap: 1rem;
+  grid-auto-rows: minmax(0, auto);
+}
+
+@mixin col {
+  margin: 1rem;
+  @media screen and (min-width: $medium-screen) {
+    margin: none;
+  }
+}
+
+// 2 column grid
+.grid-of-2 {
+  display: block;
+  width: 100%;
+  @media screen and (min-width: $medium-screen) {
+    @include grid;
+    grid-template-columns: repeat(2, 1fr);
+  }
+  [class^="grid_col"] {
+    @include col;
+  }
+
+  &__70_by_30 {
+    display: block;
+    @media screen and (min-width: $medium-screen) {
+      @include grid;
+      grid-template-columns: 2fr 1fr;
+    }
+    [class^="grid_col"] {
+      @include col;
+    }
+  }
+
+  &__30_by_70 {
+    display: block;
+    @media screen and (min-width: $medium-screen) {
+      @include grid;
+      grid-template-columns: 1fr 2fr;
+    }
+    [class^="grid_col"] {
+      @include col;
+    }
+  }
+}
+
+// 3 column grid
+.grid-of-3 {
+  display: block;
+  width: 100%;
+  @media screen and (min-width: $medium-screen) {
+    @include grid;
+    grid-template-columns: repeat(3, 1fr);
+  }
+  [class^="grid_col"] {
+    @include col;
+  }
+}
+
+// 4 column grid
+.grid-of-4 {
+  display: block;
+  width: 100%;
+  @media screen and (min-width: $medium-screen) {
+    @include grid;
+    grid-template-columns: repeat(4, 1fr);
+  }
+  [class^="grid_col"] {
+    @include col;
+  }
+}
