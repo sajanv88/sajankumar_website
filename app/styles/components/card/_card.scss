@@ -1,11 +1,15 @@
 .card {
   background-color: $color-secondary-2;
-  padding: 2.5rem;
+  padding: 2rem;
   text-align: center;
   border-radius: 3px;
   box-shadow: 0 1.5rem 4rem rgba($color-black, 0.4rem);
   margin-top: 5rem;
   transition: all 0.2s;
+
+  @media screen and (min-width: $medium-screen) {
+    padding: 2.5rem;
+  }
   &__icon {
     font-size: 5rem;
     color: $color-secondary;

@@ -5,10 +5,18 @@
   margin: 0 auto;
 }
 .u-margin-top-big {
-  margin-top: 6rem;
+  margin-top: 2rem;
+
+  @media screen and (min-width: $medium-screen) {
+    margin-top: 6rem;
+  }
 }
 .u-margin-bottom-small {
-  margin-bottom: 4rem;
+  margin-bottom: 2rem;
+
+  @media screen and (min-width: $medium-screen) {
+    margin-bottom: 4rem;
+  }
 }
 .u-margin-bottom {
   margin-bottom: 10rem !important;
