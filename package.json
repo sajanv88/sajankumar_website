@@ -11,7 +11,7 @@
     "dev": "npm-run-all --parallel start build:styles-dev",
     "build:app-prod": "NODE_ENV=production webpack --config webpack.config.js --progress --env production",
     "build:styles-prod": "node-sass --include-path scss app/styles/index.scss  app/public/css/main.css --output-style compressed",
-    "prod": "npm-run-all --parallel build:app-prod build:styles-prod"
+    "prod": "npm-run-all --parallel clean build:app-prod build:styles-prod"
   },
   "dependencies": {
     "body-parser": "^1.19.0",

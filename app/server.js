@@ -18,6 +18,10 @@ app.use("/assets", express.static(resolve(__dirname, "public")));
 const path = resolve(__dirname, "views");
 const f = join(path, "index.html");
 
+app.get("/heath", (req, res) => {
+  res.status(200).send({ ok: "ok" });
+});
+
 app.get("/", (req, res) => {
   fs.readFile(
     f,
@@ -32,6 +36,7 @@ app.get("/", (req, res) => {
 
 app.get("/api/download", (req, res) => {
   const path = join(__dirname, "files");
+  console.log(path, "path");
   const stream = fs.createReadStream(`${path}/sajankumar_v.pdf`);
   stream.on("finish", () => {
     res.end();
