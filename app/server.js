@@ -34,17 +34,6 @@ app.get("/", (req, res) => {
   );
 });
 
-app.get("/api/download", (req, res) => {
-  const path = resolve(__dirname, "files");
-  const filePath = join(path, "sajankumar_v.pdf");
-  console.log(filePath, "filePath");
-  const stream = fs.createReadStream(`${filePath}`);
-  stream.on("finish", () => {
-    res.end();
-  });
-  stream.pipe(res);
-});
-
 app.use(json());
 app.post("/api/send-message", (req, res) => {
   console.log(req.body);
