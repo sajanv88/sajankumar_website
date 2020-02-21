@@ -35,9 +35,10 @@ app.get("/", (req, res) => {
 });
 
 app.get("/api/download", (req, res) => {
-  const path = join(__dirname, "files");
-  console.log(path, "path");
-  const stream = fs.createReadStream(`${path}/sajankumar_v.pdf`);
+  const path = resolve(__dirname, "files");
+  const filePath = join(path, "sajankumar_v.pdf");
+  console.log(filePath, "filePath");
+  const stream = fs.createReadStream(`${filePath}`);
   stream.on("finish", () => {
     res.end();
   });
