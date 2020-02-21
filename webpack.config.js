@@ -4,6 +4,8 @@ const WebpackShellPlugin = require("webpack-shell-plugin");
 const TerserPlugin = require("terser-webpack-plugin");
 
 const ENV = process.env.NODE_ENV;
+const script =
+  ENV === "development" ? "nodemon build/server.js" : "node build/server.js";
 module.exports = {
   context: path.resolve(__dirname, "app"),
   entry: "./server.js",
@@ -36,7 +38,7 @@ module.exports = {
   plugins: [
     new CopyPlugin([{ from: "**/*", to: ".", ignore: ["*.scss"] }]),
     new WebpackShellPlugin({
-      onBuildEnd: ["nodemon build/server.js"]
+      onBuildEnd: [script]
     })
   ]
 };
