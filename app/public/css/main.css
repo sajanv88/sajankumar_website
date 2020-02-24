@@ -10,13 +10,6 @@
 html {
   font-size: 62.5%; }
 
-body {
-  font-family: "Alegreya Sans", sans-serif;
-  padding: 0.5rem; }
-  @media screen and (min-width: 800px) {
-    body {
-      padding: 1rem; } }
-
 /* RGB palette */
 .u-center-text {
   text-align: center; }
@@ -26,13 +19,13 @@ body {
 
 .u-margin-top-big {
   margin-top: 2rem; }
-  @media screen and (min-width: 800px) {
+  @media screen and (min-width: 700px) {
     .u-margin-top-big {
       margin-top: 6rem; } }
 
 .u-margin-bottom-small {
   margin-bottom: 2rem; }
-  @media screen and (min-width: 800px) {
+  @media screen and (min-width: 700px) {
     .u-margin-bottom-small {
       margin-bottom: 4rem; } }
 
@@ -55,7 +48,7 @@ body {
 .grid-of-2 {
   display: block;
   width: 100%; }
-  @media screen and (min-width: 800px) {
+  @media screen and (min-width: 700px) {
     .grid-of-2 {
       display: grid;
       grid-gap: 1rem;
@@ -63,12 +56,12 @@ body {
       grid-template-columns: repeat(2, 1fr); } }
   .grid-of-2 [class^="grid_col"] {
     margin: 1rem; }
-    @media screen and (min-width: 800px) {
+    @media screen and (min-width: 700px) {
       .grid-of-2 [class^="grid_col"] {
         margin: none; } }
   .grid-of-2__70_by_30 {
     display: block; }
-    @media screen and (min-width: 800px) {
+    @media screen and (min-width: 700px) {
       .grid-of-2__70_by_30 {
         display: grid;
         grid-gap: 1rem;
@@ -76,12 +69,12 @@ body {
         grid-template-columns: 2fr 1fr; } }
     .grid-of-2__70_by_30 [class^="grid_col"] {
       margin: 1rem; }
-      @media screen and (min-width: 800px) {
+      @media screen and (min-width: 700px) {
         .grid-of-2__70_by_30 [class^="grid_col"] {
           margin: none; } }
   .grid-of-2__30_by_70 {
     display: block; }
-    @media screen and (min-width: 800px) {
+    @media screen and (min-width: 700px) {
       .grid-of-2__30_by_70 {
         display: grid;
         grid-gap: 1rem;
@@ -89,14 +82,14 @@ body {
         grid-template-columns: 1fr 2fr; } }
     .grid-of-2__30_by_70 [class^="grid_col"] {
       margin: 1rem; }
-      @media screen and (min-width: 800px) {
+      @media screen and (min-width: 700px) {
         .grid-of-2__30_by_70 [class^="grid_col"] {
           margin: none; } }
 
 .grid-of-3 {
   display: block;
   width: 100%; }
-  @media screen and (min-width: 800px) {
+  @media screen and (min-width: 700px) {
     .grid-of-3 {
       display: grid;
       grid-gap: 1rem;
@@ -104,14 +97,14 @@ body {
       grid-template-columns: repeat(3, 1fr); } }
   .grid-of-3 [class^="grid_col"] {
     margin: 1rem; }
-    @media screen and (min-width: 800px) {
+    @media screen and (min-width: 700px) {
       .grid-of-3 [class^="grid_col"] {
         margin: none; } }
 
 .grid-of-4 {
   display: block;
   width: 100%; }
-  @media screen and (min-width: 800px) {
+  @media screen and (min-width: 700px) {
     .grid-of-4 {
       display: grid;
       grid-gap: 1rem;
@@ -119,7 +112,7 @@ body {
       grid-template-columns: repeat(4, 1fr); } }
   .grid-of-4 [class^="grid_col"] {
     margin: 1rem; }
-    @media screen and (min-width: 800px) {
+    @media screen and (min-width: 700px) {
       .grid-of-4 [class^="grid_col"] {
         margin: none; } }
 
@@ -271,27 +264,27 @@ h6 {
   text-transform: uppercase;
   backface-visibility: hidden; }
   .heading-primary__title {
-    font-size: 2rem;
+    font-size: 3rem;
     align-self: center;
     letter-spacing: 0.5rem; }
-    @media screen and (min-width: 800px) {
+    @media screen and (min-width: 700px) {
       .heading-primary__title {
         font-size: 6rem;
         letter-spacing: 1rem; } }
   .heading-primary__sub-title {
     display: inline-block;
     width: 95%;
-    font-size: 1rem;
+    font-size: 1.5rem;
     align-self: center;
     letter-spacing: 0.4rem; }
-    @media screen and (min-width: 800px) {
+    @media screen and (min-width: 700px) {
       .heading-primary__sub-title {
         font-size: 3rem;
         letter-spacing: 0.5rem;
         width: 80%; } }
 
 .heading-secondary {
-  font-size: 2rem;
+  font-size: 3rem;
   text-transform: uppercase;
   font-weight: 700;
   display: inline-block;
@@ -300,16 +293,16 @@ h6 {
   color: transparent;
   letter-spacing: 0.5rem;
   transition: all 0.2s; }
-  @media screen and (min-width: 800px) {
+  @media screen and (min-width: 700px) {
     .heading-secondary {
       font-size: 6rem; } }
   .heading-secondary__sub-title {
-    font-size: 1rem;
+    font-size: 1.5rem;
     display: block;
     text-transform: uppercase;
     color: #ffffff;
     letter-spacing: 0.3rem; }
-    @media screen and (min-width: 800px) {
+    @media screen and (min-width: 700px) {
       .heading-secondary__sub-title {
         font-size: 2.5rem; } }
   .heading-secondary:hover {
@@ -322,14 +315,14 @@ h6 {
   text-transform: uppercase;
   color: #ffffff;
   padding: 0 1rem; }
-  @media screen and (min-width: 800px) {
+  @media screen and (min-width: 700px) {
     .heading-sub {
       font-size: 2.5rem; } }
 
 .btn {
   font-size: 1.5rem;
   letter-spacing: 0.5rem; }
-  @media screen and (min-width: 800px) {
+  @media screen and (min-width: 700px) {
     .btn {
       font-size: 2.5rem; } }
 
@@ -339,7 +332,7 @@ h6 {
   color: #ffffff;
   text-align: left;
   padding: 0 1rem; }
-  @media screen and (min-width: 800px) {
+  @media screen and (min-width: 700px) {
     .paragraph {
       font-size: 2.5rem;
       line-height: 4.04rem; } }
@@ -352,7 +345,7 @@ h6 {
   font-weight: 700;
   display: inline-block;
   color: #ffffff; }
-  @media screen and (min-width: 800px) {
+  @media screen and (min-width: 700px) {
     .card__info__heading-primary {
       font-size: 2.5rem; } }
 
@@ -377,7 +370,7 @@ h6 {
   .header-container .heading-action {
     align-self: center;
     margin-top: 2rem; }
-    @media screen and (min-width: 800px) {
+    @media screen and (min-width: 700px) {
       .header-container .heading-action {
         margin-top: 3rem; } }
 
@@ -392,7 +385,7 @@ h6 {
   outline: none;
   border: none;
   cursor: pointer; }
-  @media screen and (min-width: 800px) {
+  @media screen and (min-width: 700px) {
     .btn {
       padding: 1.5rem 3rem; } }
   .btn:hover {
@@ -429,7 +422,7 @@ h6 {
   box-shadow: 0 1.5rem 4rem rgba(0, 0, 0, 0.4);
   margin-top: 5rem;
   transition: all 0.2s; }
-  @media screen and (min-width: 800px) {
+  @media screen and (min-width: 700px) {
     .card {
       padding: 2.5rem; } }
   .card__icon {
@@ -457,7 +450,7 @@ h6 {
 .form {
   font-size: 1.5rem;
   text-transform: uppercase; }
-  @media screen and (min-width: 800px) {
+  @media screen and (min-width: 700px) {
     .form {
       font-size: 2rem; } }
   .form__label {
@@ -473,7 +466,7 @@ h6 {
     background-color: rgba(130, 139, 145, 0.7);
     outline: none;
     border: none; }
-    @media screen and (min-width: 800px) {
+    @media screen and (min-width: 700px) {
       .form__input {
         height: 65px; } }
   .form__message {
@@ -488,7 +481,7 @@ h6 {
     outline: none;
     border: none;
     font-weight: 300; }
-    @media screen and (min-width: 800px) {
+    @media screen and (min-width: 700px) {
       .form__message {
         min-height: 24rem; } }
   .form__action {
@@ -514,6 +507,9 @@ h6 {
 
 .composition {
   position: relative; }
+  @media screen and (max-width: 700px) {
+    .composition {
+      display: none; } }
   .composition__photo {
     width: 80%;
     border-radius: 0.2rem;
@@ -560,8 +556,8 @@ h6 {
   background-color: #1e2019;
   background-repeat: no-repeat;
   padding: 2.5rem 1.5rem;
-  margin-top: -1rem; }
-  @media screen and (min-width: 800px) {
+  margin-top: -0.5rem; }
+  @media screen and (min-width: 700px) {
     .section-about {
       padding: 6.5rem 0; } }
 
@@ -571,9 +567,8 @@ h6 {
   background-image: linear-gradient(to left, rgba(33, 36, 38, 0.9) 50%, rgba(33, 36, 38, 0.9) 50%), url(/assets/images/service_bg.jpg);
   background-repeat: no-repeat;
   background-size: cover;
-  transform: skewY(-7deg);
-  margin-top: -9rem; }
-  @media screen and (min-width: 800px) {
+  transform: skewY(-7deg); }
+  @media screen and (min-width: 700px) {
     .section-skills {
       padding: 6.5rem 0; } }
   .section-skills > * {
@@ -581,9 +576,8 @@ h6 {
 
 .section-contact {
   background-color: #1e2019;
-  padding: 13.5rem 2rem 2rem;
-  margin-top: -9rem; }
-  @media screen and (min-width: 800px) {
+  padding: 13.5rem 2rem 2rem; }
+  @media screen and (min-width: 700px) {
     .section-contact {
       padding: 15rem 0 3rem; } }
 
@@ -605,3 +599,13 @@ h6 {
     .footer__social > div {
       align-self: center;
       margin-top: 1rem; }
+
+body {
+  font-family: "Alegreya Sans", sans-serif;
+  padding: 0rem; }
+  @media screen and (min-width: 700px) {
+    body {
+      padding: 1rem; } }
+
+main {
+  background-color: #1e2019; }

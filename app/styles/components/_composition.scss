@@ -1,4 +1,7 @@
 .composition {
+  @media screen and (max-width: $medium-screen) {
+    display: none;
+  }
   position: relative;
 
   &__photo {

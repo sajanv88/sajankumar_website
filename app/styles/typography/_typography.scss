@@ -12,7 +12,7 @@ h6 {
   text-transform: uppercase;
   backface-visibility: hidden;
   &__title {
-    font-size: 2rem;
+    font-size: 3rem;
     align-self: center;
     letter-spacing: 0.5rem;
     @media screen and (min-width: $medium-screen) {
@@ -23,7 +23,7 @@ h6 {
   &__sub-title {
     display: inline-block;
     width: 95%;
-    font-size: 1rem;
+    font-size: 1.5rem;
     align-self: center;
     letter-spacing: 0.4rem;
     @media screen and (min-width: $medium-screen) {
@@ -35,7 +35,7 @@ h6 {
 }
 
 .heading-secondary {
-  font-size: 2rem;
+  font-size: 3rem;
   text-transform: uppercase;
   font-weight: 700;
   display: inline-block;
@@ -49,7 +49,7 @@ h6 {
   }
 
   &__sub-title {
-    font-size: 1rem;
+    font-size: 1.5rem;
     display: block;
     text-transform: uppercase;
     color: $color-white;

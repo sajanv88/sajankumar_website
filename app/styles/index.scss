@@ -14,13 +14,6 @@ $base-font-size: 62.5%; // 10px
 html {
   font-size: $base-font-size;
 }
-body {
-  font-family: "Alegreya Sans", sans-serif;
-  padding: 0.5rem;
-  @media screen and (min-width: 800px) {
-    padding: 1rem;
-  }
-}
 
 @import "abstracts/color";
 @import "abstracts/mixins";
@@ -46,3 +39,14 @@ body {
 
 @import "animations/buttonanimation";
 @import "pages/home";
+
+body {
+  font-family: "Alegreya Sans", sans-serif;
+  padding: 0rem;
+  @media screen and (min-width: $medium-screen) {
+    padding: 1rem;
+  }
+}
+main {
+  background-color: $main-color-bg;
+}

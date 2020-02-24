@@ -2,7 +2,7 @@
   background-color: $color-default-bg;
   background-repeat: no-repeat;
   padding: 2.5rem 1.5rem;
-  margin-top: -1rem;
+  margin-top: -0.5rem;
   @media screen and (min-width: $medium-screen) {
     padding: 6.5rem 0;
   }
@@ -21,7 +21,6 @@
   background-repeat: no-repeat;
   background-size: cover;
   transform: skewY(-7deg);
-  margin-top: -9rem;
   @media screen and (min-width: $medium-screen) {
     padding: 6.5rem 0;
   }
@@ -34,7 +33,6 @@
 .section-contact {
   background-color: $color-default-bg;
   padding: 13.5rem 2rem 2rem;
-  margin-top: -9rem;
 
   @media screen and (min-width: $medium-screen) {
     padding: 15rem 0 3rem;
